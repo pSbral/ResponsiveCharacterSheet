@@ -16,6 +16,10 @@
     padding: 1rem;
 }
 
+.margin {
+    margin: 1.5rem;
+}
+
 .border {
     outline: 2px solid white;
 }
@@ -24,23 +28,10 @@
     flex-direction: column;
 }
 
-.page-icon {
-    height: 5rem;
-    width: 5rem;
-
-    margin-right: 1rem;
-
-    font-size: 5rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Grandparent */
 
 .box-grandparent {
-    padding: 3rem 5rem 3rem 3rem;
+    padding: 3rem 3rem 3rem 3rem;
 
     position: fixed;
     top: 50%;
@@ -59,43 +50,46 @@
     flex-grow: 1;
 }
 
-.box-parent:not(:first-child) {
-    margin-left: 2rem;
-}
-
 .box-parent-charStatus {
     display: flex;
-
-    margin-bottom: 2rem;
+    flex-grow: 1;
 }
 
 .box-parent-charAttribute {
     display: flex;
 
     height: 25rem;
-
-    margin: 0 0 2rem 2rem;
+    margin-bottom: 2rem;
 }
 
 .box-parent-charSkills {
     height: 10rem;
-    margin-left: 2rem;
 }
 
 .box-parent-charInfo {
-    width: 30rem;
+    display: flex;
+    justify-content: center;
+}
+
+.box-parent-charInfo-item {
+    height: 15rem;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.box-parent-charAccessory {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* Child */
 
 .box-child-charStatus {
-    display: flex;
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
 
-    margin: 1rem 0 0 4rem;
+    display: flex;
 }
 
 .box-child-charStatus-element {
@@ -103,9 +97,16 @@
     width: 3rem;
 
     position: absolute;
-    margin: 0 0 0 0.5rem;
+    margin: 0 1rem 0 0;
 
     border-radius: 50%;
+}
+
+.box-child-charStatus-level {
+    font-size: 5rem;
+    margin-right: 2rem;
+
+    display: flex;
 }
 
 .box-child-charStatus-info {
@@ -123,16 +124,31 @@
     padding: 1.5rem 0.5rem 1.5rem 0.5rem;
 }
 
-.box-child-charInfo-image {
-    height: 25rem;
-    width: 17rem;
+.box-child-charInfo {
+    width: 30rem;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.box-child-charInfo-item {
+    height: 5rem;
+    width: 5rem;
+}
+
+.box-child-charInfo-image {
+    height: 25rem;
+    width: 17rem;
 
     padding: 0 1rem 0 1rem;
+}
 
+.box-child-charAccessory {
+    height: 5rem;
+    width: 5rem;
+
+    border-radius: 50%;
 }
 
 /* Grandchild */
