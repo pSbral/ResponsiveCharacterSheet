@@ -1,0 +1,163 @@
+:root {
+    --bg-gray: #0f0f0f;
+}
+
+/* General Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--bg-gray);
+    color: white;
+}
+
+.padding {
+    padding: 1rem;
+}
+
+.border {
+    outline: 2px solid white;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.page-icon {
+    height: 5rem;
+    width: 5rem;
+
+    margin-right: 1rem;
+
+    font-size: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grandparent */
+
+.box-grandparent {
+    padding: 3rem 5rem;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Parent */
+
+.box-parent {
+    display: flex;
+    flex-grow: 1;
+}
+
+.box-parent:not(:first-child) {
+    margin-left: 2rem;
+}
+
+.box-parent {
+    display: flex;
+    background-color: brown;
+}
+
+.box-parent-attribute {
+    display: flex;
+
+    height: 20rem;
+
+    margin-top: 2rem;
+}
+
+.box-parent-input {
+    display: flex;
+    justify-content: center;
+}
+
+.box-parent-status {
+    height: 15rem;
+    margin-top: 2rem;
+}
+
+.box-parent-character {
+    width: 30rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Child */
+
+.box-child-attriute {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+}
+
+.box-child-input {
+    display: flex;
+    flex-grow: 1;
+
+    width: 20rem;
+    margin-bottom: 0.5rem;
+}
+
+.box-child-character {
+    height: 25rem;
+    width: 17rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 1rem 0 1rem;
+
+}
+
+.box-child-level {
+    height: 6.5rem;
+    width: 5.5rem;
+
+    margin-top: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+
+    position: fixed;
+    align-self: baseline;
+}
+
+/* Grandchild */
+
+.box-grandchild-attribute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+
+    height: 3rem;
+    width: 3rem;
+}
+
+.box-grandchild-input {
+    border-bottom: 2px solid white;
+
+    display: flexbox;
+    flex-grow: 1;
+}
+
+.box-grandchild-eleclass {
+    height: 3rem;
+    width: 3rem;
+}
