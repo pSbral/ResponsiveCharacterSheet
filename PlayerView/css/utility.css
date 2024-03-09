@@ -4,6 +4,22 @@
     align-items: center;
 }
 
+.baseline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.border {
+    border: solid 1px var(--white);
+}
+
 .circle {
     border-radius: 50%;
+}
+
+.p-absolute {
+    position: absolute;
 }

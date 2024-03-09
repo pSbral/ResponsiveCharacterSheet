@@ -1,6 +1,7 @@
 /* Setup */
 :root {
     --white: #d6d6d6;
+    --golden: #ffc131;
 
     --backgound-black: #101010;
 
@@ -12,46 +13,18 @@ body {
     background-color: var(--backgound-black);
 }
 
-/* Styling */
-
-.border {
-    border: solid 2px var(--white);
+svg {
+    overflow: visible
 }
 
-/* Visualizer */
+/* Main */
 
-.visualizer {
-    height: 100vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.visualiser--player-view {
+.main--player-experienceBar {
     height: 25rem;
     width: 25rem;
-
 }
 
-.experience--progress-bar {
-    position: absolute;
-}
-
-.visualiser--player-experienceOut {
+.main--player-experienceBar>svg {
     height: 100%;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow: 0 0 3rem var(--shadow-white-out);
-}
-
-.visualiser--player-experienceIn {
-    height: 95%;
-    width: 95%;
-
-    box-shadow: inset 0 0 2rem var(--shadow-white-in);
+    display: block;
 }
