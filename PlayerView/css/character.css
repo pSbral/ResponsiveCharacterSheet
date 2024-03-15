@@ -37,16 +37,19 @@ body {
     letter-spacing: 2rem;
 }
 
+#container {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
 .main-character {
     height: 25rem;
+
     display: flex;
-
-    margin: 0 7.5rem;
-
     align-items: center;
     justify-content: center;
 }
-
 
 .main-character--equip-item {
     width: 7rem;
@@ -64,9 +67,6 @@ body {
     z-index: -1;
 
     height: 18rem;
-    width: fit-content;
-
-    /* Dist^ncia da base */
 }
 
 .main-skills {
