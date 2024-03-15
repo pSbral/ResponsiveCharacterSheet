@@ -1,0 +1,74 @@
+/* Setup */
+:root {
+    --white: #ffffff;
+    --golden: #ffc131;
+
+    --backgound-black: #101010;
+
+    --shadow-white-out: #1b1b1b;
+    --shadow-white-in: #2c2c2c;
+}
+
+body {
+    background-color: var(--backgound-black);
+    font-family: Calibri;
+    color: var(--white);
+}
+
+/* Main */
+
+.main {
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+.main-class {
+    height: 10rem;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 4rem;
+    letter-spacing: 2rem;
+}
+
+.main-character {
+    height: 25rem;
+    display: flex;
+
+    margin: 0 7.5rem;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-character--equip-item {
+    width: 7rem;
+    height: 7rem;
+
+    border: solid 4px var(--white);
+    border-radius: 50%;
+
+    background-color: var(--backgound-black);
+    box-shadow: 0 0 2rem var(--shadow-white-in);
+}
+
+.main-character-char {
+    position: absolute;
+    z-index: -1;
+
+    height: 18rem;
+    width: fit-content;
+
+    /* Dist^ncia da base */
+}
+
+.main-skills {
+    height: 10rem;
+}

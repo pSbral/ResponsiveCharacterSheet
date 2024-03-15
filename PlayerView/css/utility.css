@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.baseline {
+.base {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,4 +22,8 @@
 
 .p-absolute {
     position: absolute;
+}
+
+.mb-1 {
+    margin-bottom: 6rem;
 }
